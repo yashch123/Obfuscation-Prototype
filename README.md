@@ -5,7 +5,7 @@ A prototype neural network that runs on obfuscated inputs.
 Installation support is on Ubuntu. 
 
 ### Virtual Machine (on Ubuntu)
-To run on a virtual environment, first run
+To run on a virtual environment, first run the command
 
 ```shell
 $ make virtual
@@ -17,7 +17,7 @@ This will install on your LOCAL machine a copy of virtualenv, which can be used 
 $ source ./venv/bin/activate
 ```
 
-Now you will be running in a virtual environment.
+Now you will be running in a virtual environment and can start running the neural network on the obfuscated inputs.
 
 ### Building
 Run the command

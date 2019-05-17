@@ -48,14 +48,18 @@ weights = model.get_weights()[0]
 
 print("Weights: ", weights)
 
+# get the kernal values based on the weights
 def get_kernel(weights):
     weight_matrix = np.asmatrix(weights)
     Z = null_space(weights)
     return Z
 
 kernel = get_kernel(weights.transpose())
+
+# create kernel matrix
 kernel_matrix = np.asmatrix(kernel)
 
+# obfuscation done based on kernel matrix
 def obfuscate(image, kernel_matrix, coefficients):
     image_matrix = image.flatten()
     obfuscation = kernel_matrix.dot(coefficients)
